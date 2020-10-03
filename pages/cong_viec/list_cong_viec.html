@@ -1,0 +1,44 @@
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" >
+    <div class="card" >
+        <div class="card-header">DANH SÁCH CÔNG VIỆC</div>
+        <input type='text' class="form-control form-control-navbar" style="width: 200px;margin: 5px;" ng-model='searchText' placeholder="Tìm kiếm" />
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th><a href="" ng-click="sortBy('name')">Tên công việc</a></th>
+                        <th><a href="" ng-click="sortBy('phongban')">Phòng ban</a></th>
+                        <th><a href="" ng-click="sortBy('desc')">Mô tả</a></th>
+                        <th><a href=""ng-click="sortBy('status')">Trạng thái</a></th>
+                        <th><a href="" ng-click="sortBy('date')">Ngày Thực hiện</a></th>
+                        <th style="width: 100px;">Chức năng</th>
+                    </tr>
+                    <tr ng-repeat="p in list_phongban|orderBy:prop|limitTo:8:begin| filter:searchText">
+                        <td>{{p.name|uppercase}}</td>
+                        <td>{{p.phongban}}</td>
+                        <td>{{p.decs}}</td>
+                        <td>
+                            <select class="form-control select2" style="width: 120px;">
+                                <option selected="selected">Hoàn thành</option>
+                                <option>Đang làm</option>
+                            </select>
+                        </td>
+                        <td>{{p.date|date:"MMMM-dd,yyyy"}}</td>
+                        <td><a href="">Sửa</a> | <a href="">Xóa</a></td>
+
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-primary" ng-click="first()"><<</button>
+        <button class="btn btn-primary" ng-click="prev()">Trởi về</button>
+        <button class="btn btn-primary" ng-click="next()">tiếp theo</button>
+        <button class="btn btn-primary" ng-click="last()">>></button>
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.content-wrapper -->
+  

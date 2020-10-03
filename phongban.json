@@ -1,0 +1,81 @@
+{
+  "loaiphongban": [
+    {
+      "name": "nhân sự",
+      "phongban": "marketing",
+      "status": "Đang làm",
+      "decs": "là ngành quản trị nhân sự. Các công việc của HR liên quan đến các hoạt động tuyển dụng, lên kế hoạch triển khai các chính sách phù hợp để duy trì nguồn nhân lực cho công ty và có kế hoạch bồi dưỡng phát triển năng lực các cá nhân, phòng ban để có thể hoàn thành công việc một cách hiệu quả nhất.",
+      "date": "2032-03-16",
+      "id": 2
+    },
+    {
+      "name": "Quản lý thực tập sinh",
+      "phongban": "Nhân sự",
+      "status": "Đang làm",
+      "decs": "là ngành quản trị nhân sự. Các công việc của HR liên quan đến các hoạt động tuyển dụng, lên kế hoạch triển khai các chính sách phù hợp để duy trì nguồn nhân lực cho công ty và có kế hoạch bồi dưỡng phát triển năng lực các cá nhân, phòng ban để có thể hoàn thành công việc một cách hiệu quả nhất.",
+      "date": "2001-03-16",
+      "id": 4
+    },
+    {
+      "name": "Marketing",
+      "phongban": "marketing",
+      "status": "Hoàn thành",
+      "decs": "là ngành quản trị nhân sự. Các công việc của HR liên quan đến các hoạt động tuyển dụng, lên kế hoạch triển khai các chính sách phù hợp để duy trì nguồn nhân lực cho công ty và có kế hoạch bồi dưỡng phát triển năng lực các cá nhân, phòng ban để có thể hoàn thành công việc một cách hiệu quả nhất.",
+      "date": "2000-03-16",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "id": 6
+    },
+    {
+      "name": "check cam",
+      "phongban": "Phòng marketing",
+      "decs": "assssssssss",
+      "date": "12-23-3333",
+      "id": 7
+    },
+    {
+      "name": "Quan ly",
+      "id": 8
+    },
+    {
+      "name": "Ngày mai được nghỉ",
+      "phongban": "All",
+      "decs": "mai được nghỉ lễ",
+      "id": 10
+    },
+    {
+      "name": "admin",
+      "phongban": "All",
+      "password": "123",
+      "decs": "mai được nghỉ lễ",
+      "id": 10
+    },
+    {
+      "name": "maiductuan",
+      "email": "maituan15042k@gmail.com",
+      "password": "123",
+      "stress": "Đà Nẵng",
+      "phone": 376637703,
+      "phongban": "Arrager",
+      "level": "trưởng phòng",
+      "linkhangout": "http://localhost:3000/loaiphongban",
+      "id": 11
+    },
+    {
+      "name": "cccccc",
+      "phongban": "Phòng marketing",
+      "decs": "adssss",
+      "date": "11/33/444444",
+      "id": 12
+    },
+    {
+      "name": "Làm task",
+      "phongban": "Phòng marketing",
+      "decs": "code giao diện admin",
+      "date": "15/04/2000",
+      "id": 13
+    }
+  ]
+}

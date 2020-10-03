@@ -1,0 +1,41 @@
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" >
+    <div class="card" >
+        <div class="card-header">DANH SÁCH HÀNG HÒA</div>
+        <input class="form-control form-control-navbar" type='text' style="width: 200px;margin: 5px;" ng-model='searchText' placeholder="Tìm kiếm" />
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th><a href="" ng-click="sortBy('name')">Tên nhân viên</a></th>
+                        <th><a href="" ng-click="sortBy('name')">Email</a></th>
+                        <th><a href="" ng-click="sortBy('name')">SĐT</a></th>
+                        <th><a href="" ng-click="sortBy('name')">Địa chỉ</a></th>
+                        <th><a href="" ng-click="sortBy('name')">Phòng ban</a></th>
+                        <th><a href="" ng-click="sortBy('name')">Chức vụ</a></th>
+                        <th><a href="" ng-click="sortBy('name')">link hangout</a></th>
+                        <th style="width: 100px;">Chức năng</th>
+                    </tr>
+                    <tr ng-repeat="p in list_phongban|orderBy:prop|limitTo:8:begin| filter:searchText">
+                        <td>{{p.name|uppercase}}</td>
+                        <td>{{p.email}}</td>
+                        <td>{{p.phone}}</td>
+                        <td>{{p.stress}}</td>
+                        <td>{{p.phongban}}</td>
+                        <td>{{p.level}}</td>
+                        <td>{{p.linkhangout}}</td>
+                        <td><a href="">Sửa</a> | <a href="">Xóa</a></td>
+
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-primary" ng-click="first()"><<</button>
+        <button class="btn btn-primary" ng-click="prev()">Trởi về</button>
+        <button class="btn btn-primary" ng-click="next()">tiếp theo</button>
+        <button class="btn btn-primary" ng-click="last()">>></button>
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.content-wrapper -->

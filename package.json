@@ -1,0 +1,17 @@
+{
+  "name": "qt-arranger",
+  "version": "1.0.0",
+  "description": "something",
+  "main": "Product.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "json:server": "json-server --watch phongban.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}

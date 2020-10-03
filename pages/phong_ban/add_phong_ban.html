@@ -1,0 +1,23 @@
+<div class="col-sm-6 offset-sm-3" style="padding: 30px;">
+  <div class="card card-primary">
+      <div class="card-header">
+        <h3 class="card-title">Thêm phòng ban</h3>
+      </div>
+      <!-- /.card-header -->
+      <!-- form start -->
+      <form role="form" name="frmsv">
+        <div class="card-body">
+          <div class="form-group" p in list_phongban>
+            <label for="exampleInputEmail1">Tên phòng ban</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" ng-model="name" required placeholder="Enter email" name="txtname">
+            <label style="background: none;color: red;border: none;font-family: serif;" ng-show="frmsv.txtname.$invalid" class="alert alert-danger">Tên phòng ban không được bỏ trống</label>
+          </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+          <button type="submit" class="btn btn-primary" ng-show="frmsv.$valid" ng-click="add_phongban()">Thêm</button>
+        </div>
+      </form>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="col-sm-6 offset-sm-3" style="padding: 30px;">
+    <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">Thêm thông báo</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form role="form" >
+          <div class="card-body">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tên thông báo</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" ng-model="name" required placeholder="Enter thông báo">
+            </div>
+            <div class="form-group">
+                <label>Phòng ban</label>
+                <select class="form-cont rol select2" style="width: 100%;" ng-model="phongban">
+                  <option selected="selected">All</option>
+                  <option selected="selected">Arrager</option>
+                  <option>Phòng marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Nội dung thông báo</label>
+                <textarea class="form-control" rows="3" placeholder="mô tả ..." required ng-model="decs"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+  
+          <div class="card-footer">
+            <button type="submit" class="btn btn-primary" ng-click="add_thongbao()">Thêm</button>
+          </div>
+        </form>
+    </div>
+  </div>
